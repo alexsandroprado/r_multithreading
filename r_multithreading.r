@@ -1,4 +1,4 @@
-print("## ATIVANDO MULTIPROCESSAMENTO NO AMBIENTE R ##")
+cat("## ATIVANDO MULTIPROCESSAMENTO NO AMBIENTE R ##")
 # Pacotes necessarios ----
 if (!require('doParallel')) install.packages('doParallel', dependencies = TRUE); library('doParallel')
 
@@ -10,8 +10,8 @@ showConnections() #Checar se o multicore esta ON
 for (node in cl) try(print(node)) #Checar se o multicore esta ON
 #stopCluster(cl) ##Desativar multiprocessamento
 
-print("   ")
-print("-------------------------------------------------------------------------------------------------------------")
-print("@contabilidades | @ufersa3 | @gecomt_ufersa")
-print("-------------------------------------------------------------------------------------------------------------")
-print("https://github.com/alexsandroprado");print("“In God we trust; all others must bring data” - Deming")
+
+
+cat("@contabilidades | @ufersa3 | @gecomt_ufersa")
+
+cat("https://github.com/alexsandroprado\n“In God we trust; all others must bring data” - Deming")
