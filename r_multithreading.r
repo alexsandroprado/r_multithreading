@@ -13,6 +13,6 @@ for (node in cl) try(print(node)) #Checar se o multicore esta ON
 cat("\n")
 
 
-cat("@contabilidades | @ufersa3 | @gecomt_ufersa")
+cat("| @contabilidades \n | @ufersa3 \n | @gecomt_ufersa")
 
 cat("https://github.com/alexsandroprado\n“In God we trust; all others must bring data” - Deming")
