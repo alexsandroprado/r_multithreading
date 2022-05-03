@@ -1,4 +1,4 @@
-cat("## ATIVANDO MULTIPROCESSAMENTO NO AMBIENTE R ##"\n\n)
+cat("## ATIVANDO MULTIPROCESSAMENTO NO AMBIENTE R ##\n\n")
 # Pacotes necessarios ----
 if (!require('doParallel')) install.packages('doParallel', dependencies = TRUE); library('doParallel')
 
