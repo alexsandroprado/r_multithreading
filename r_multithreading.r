@@ -17,6 +17,6 @@ getOption("Ncpus", 1L)
 cat("\n")
 
 
-cat("| @contabilidades | @ufersa3 | @gecomt_ufersa\n ")
+cat("| @contabilidados | @ufersa3 | @gecomt_ufersa\n ")
 
 cat("https://github.com/alexsandroprado\n“In God we trust; all others must bring data” - Deming\n ")
