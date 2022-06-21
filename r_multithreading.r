@@ -1,10 +1,7 @@
 cat("## ATIVANDO MULTIPROCESSAMENTO NO AMBIENTE R ##\n\n")
-pb <- tkProgressBar("test progress bar", "Some information in %",
-                    0, 100, 50)
+
 # Pacotes necessarios ----
 if (!require('doParallel')) install.packages('doParallel', dependencies = TRUE); library('doParallel')
-if (!require('tcltk')) install.packages('tcltk', dependencies = TRUE); library('tcltk')
-
 
 # Ativando multithending no R----
 library(doParallel)
@@ -24,4 +21,4 @@ cat("\n")
 cat("| @contabilidados | @ufersa3 | @gecomt_ufersa\n ")
 
 cat("https://github.com/alexsandroprado\n“In God we trust; all others must bring data” - Deming\n ")
-close(pb)
+
