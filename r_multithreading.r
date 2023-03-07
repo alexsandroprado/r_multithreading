@@ -1,9 +1,22 @@
 cat("## ATIVANDO MULTIPROCESSAMENTO NO AMBIENTE R ##\n\n")
 
+cat("Para desativar o multicore, digite:  stopCluster(cl)")
+
+cat("Para testar o desempenho do computador, digite:  benchmark() ")
+
 # Pacotes necessarios ----
 if (!require('doParallel')) install.packages('doParallel', dependencies = TRUE); library('doParallel')
+if (!require("SuppDists")) install.packages("SuppDists")
 
-# Ativando multithending no R----
+# Funcões
+benchmark <- function(x) {
+  source("http://r.research.att.com/benchmarks/R-benchmark-25.R")
+}
+benchmark()
+
+
+
+# Ativando multithreading no R----
 library(doParallel)
 cl <- makeCluster(detectCores()-1)
 registerDoParallel(cl)
@@ -21,4 +34,3 @@ cat("\n")
 cat("| @contabilidados | @ufersa3 | @gecomt_ufersa\n ")
 
 cat("https://github.com/alexsandroprado\n“In God we trust; all others must bring data” - Deming\n ")
-
