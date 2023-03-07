@@ -1,8 +1,8 @@
 cat("## ATIVANDO MULTIPROCESSAMENTO NO AMBIENTE R ##\n\n")
 
-cat("Para desativar o multicore, digite:  stopCluster(cl)\n ")
+cat("Para desativar o multicore, digite:  'stopCluster(cl)'\n")
 
-cat("Para testar o desempenho do computador, digite:  benchmark()\n ")
+cat("Para testar o desempenho do computador, digite:  'benchmark()'\n")
 
 # Pacotes necessarios ----
 if (!require('doParallel')) install.packages('doParallel', dependencies = TRUE); library('doParallel')
