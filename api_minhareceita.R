@@ -1,9 +1,20 @@
-library(parallel)
-library(tibble)
-library(purrr)
-library(pbapply)
-library(dplyr)
-library(jsonlite)
+# Função para verificar e instalar pacotes
+install_and_load <- function(packages) {
+  installed_packages <- rownames(installed.packages())
+  
+  for (pkg in packages) {
+    if (!pkg %in% installed_packages) {
+      install.packages(pkg, dependencies = TRUE)
+    }
+    library(pkg, character.only = TRUE)
+  }
+}
+
+# Lista de pacotes
+packages <- c("parallel", "tibble", "purrr", "pbapply", "dplyr", "jsonlite")
+
+# Chamar a função
+install_and_load(packages)
 
 consultar_cnpj <- function(cnpjs) {
   # Configurar o número de núcleos
